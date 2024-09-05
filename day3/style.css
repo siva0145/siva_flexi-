@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #0044cb;
+}
+h2 {
+    color: #0044cb;
+}
+nav {
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+}
+.navbar ul li{
+    list-style-type: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 12px 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: white;
+}
+nav ul li:hover{
+    background-color: rgb(181,177,174);
+    
+}
+#curriculum {
+    /* display: flex; */
+    margin-bottom: 10px;
+}
+.curriculum-section{
+display: flex;
+}
+.curriculum-item {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.curriculum-item:hover {
+    transform: translateY(-5px);
+}
+
+.curriculum-item h3 {
+    color: #0047ab;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.curriculum-container{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.curriculum-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.main-content {
+    background-color: #f2f2f2;
+}
+.overview-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 20px
+}
