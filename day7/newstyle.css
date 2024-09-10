@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #d6dab2;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.application-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.application-form input,
+.application-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d8bbbb;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.application-form input[type="date"] {
+    padding: 8px 12px;
+}
+
+.application-form input[type="file"] {
+    padding: 8px 12px;
+    border: none;
+}
+
+.application-form input:focus,
+.application-form textarea:focus {
+    border-color: #756f7e;
+}
+
+.application-form textarea {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #0f0e0e;
+    color: #f8eeee;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2c2929;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+}
